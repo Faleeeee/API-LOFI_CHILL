@@ -1,0 +1,414 @@
+.btn-add {
+  padding: 30px 23px;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 50%;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+  font-weight: 700;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: transparent;
+  color: #fff;
+  backdrop-filter: blur(50px);
+}
+
+.btn-add:hover {
+  color: #333;
+  background-color: #fff;
+}
+
+.btn-fix,
+.btn-del {
+  background-color: rgba(255, 255, 255, 0.696);
+  color: #1d2021;
+  padding: 15px 30px;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+  font-weight: 700;
+  width: 150px;
+  border: 2px solid rgba(225, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+.btn-fix:hover {
+  color: #fff;
+  background-color: rgb(249, 191, 46);
+}
+
+.btn-del:hover {
+  color: #fff;
+  background-color: rgb(249, 46, 46);
+}
+
+.wrapper-all {
+  margin-top: 120px;
+  margin-bottom: 10px;
+  width: 1300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.image-container-song {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+.image-row-song {
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border-radius: 10px;
+  padding: 20px 40px;
+  border: 2px solid rgba(225, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.image-song {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.image-name-song {
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.thumbnail-header,
+.name-song-header,
+.button-header,
+.thumbnail-container,
+.name-song-container,
+.button-container {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px 40px;
+  border: 2px solid rgba(225, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.thumbnail-container > .image-song {
+  margin-right: 10px;
+}
+
+.name-song-container > .image-name-song {
+  margin-right: 20px;
+}
+
+.image-row-song > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-row-song > div > div {
+  margin-bottom: 10px;
+}
+
+.btn-fix,
+.btn-del {
+  margin-left: 10px;
+}
+
+.add-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content,
+.edit-content {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 20px 40px;
+  border: 2px solid rgba(225, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 600px;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="file"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  backdrop-filter: blur(10px);
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+
+.modal-content,
+.edit-content form label {
+  margin-right: 10px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.modal-content form > div {
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.modal-content form label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.modal-content form button {
+  background-color: #1d2021;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.modal-content form button:hover {
+  background-color: #3e8e41;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 10px;
+}
+
+.close-modal:hover {
+  color: red;
+}
+
+.delete-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.delete-content {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 20px 40px;
+  border: 2px solid rgba(225, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 700px;
+  height: auto;
+}
+
+.btn-delete {
+  background-color: #1d2021;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.btn-delete:hover {
+  color: #fff;
+  background-color: rgb(249, 46, 46);
+  transition: all 0.3s ease;
+}
+
+.edit-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.edit-content h2 {
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.edit-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.edit-content label {
+  font-weight: 500;
+  text-align: right;
+}
+
+.edit-content input[type="text"],
+.edit-content input[type="file"],
+.edit-content select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+
+.edit-content button[type="submit"] {
+  background-color: #1d2021;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.edit-content button[type="submit"]:hover {
+  background-color: #cbce2b;
+  color:#1d2021
+}
+
+.choose {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23ccc' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+}
+
+.name_a {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: left;
+  color: #fff;
+  margin-left: 70px;
+  margin-top: 80px;
+
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px
+}
+
+.pagination button {
+  background-color: #fff;
+  color: #1d2021;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1em;
+  border-radius: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #cbce2b;
+  color: #1d2021;
+}
+
+.pagination button.active { 
+  background-color: #cbce2b;
+  color: #fff;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: default;
+}

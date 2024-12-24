@@ -1,0 +1,42 @@
+.soundsInfo-container {
+  padding-top: 30px;
+  padding-left: 20px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.soundInfo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.soundInfo-name {
+  font-size: 16px;
+  text-align: left;
+  flex: 1;
+}
+
+.sliderInfo-container {
+  width: 200px;
+}
+
+.volumeInfo-slider {
+  -webkit-appearance: none;
+  width: 90%;
+  height: 3px;
+  background: #d3d3d3;
+  outline: none;
+  border-radius: 10px;
+}
+
+.volumeInfo-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ffbd6f;
+  cursor: pointer;
+}
